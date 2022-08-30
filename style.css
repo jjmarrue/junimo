@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;500&display=swap');
+
+:root {
+  --junimo-color: #ffffff;
+  font-family: 'Roboto Mono', monospace;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background:#00171f;
+  overflow: hidden;
+}
+
+svg {
+  max-width: 100%;
+  cursor: pointer;
+}
+
+#junimo {
+  fill: var(--junimo-color);       
+  transform-origin: 50% 50%;
+  /* transition: all 1s ease; */
+  animation: moveMe 5s linear infinite running;
+} 
+
+@keyframes moveMe {
+  0% {
+    fill: pink;
+    transform: rotate(0);
+  } 
+  5.9% { 
+    fill: yellow;      
+  } 
+  11.8% { 
+    fill: gold;        
+  } 
+  17.7% {
+    fill: orange; 
+  } 
+  23.6% { 
+    fill: lightGreen;
+    transform: rotate(10deg);     
+  }
+  29.5% {
+    fill: olive;
+  } 
+  35.4% {
+    fill: green;     
+  } 
+  41.3% {
+    fill: cyan; 
+  }
+  47.2% {
+    fill: lightCyan; 
+  }
+  53.1% {
+    fill: blue;
+    transform: scale(65%);
+  }
+  59% {
+    fill: purple;
+  }
+  64.9% {
+    fill: maroon;   
+  }
+  70.8% {
+    fill: brown;
+  }
+  76.7% {
+    fill: wheat;
+    transform: rotate(-10deg);
+  }
+  82.6% {
+    fill: lightGreen; 
+  }
+  88.5% {
+    fill: grey; 
+  }
+  94.4% {
+    fill: white; 
+  }
+  100% {
+    fill: pink; 
+    transform: rotate(0);
+  }
+}
+
+footer{
+  color: #ffffff;
+}
+
+footer p{
+  font-size: 0.85em;
+  font-weight: 100;
+  height: 1.5em;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #00a8e8;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
